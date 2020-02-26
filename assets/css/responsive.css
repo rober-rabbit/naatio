@@ -1,0 +1,476 @@
+/* ===================================================
+
+   Archit. Media Queries
+
+   TOC:
+	01. screen width less than 1401px and more then 1040  ( Extra large Screen / Desktop )
+	02. screen width more than 1200px and less then 1300  ( Mid large Screen / Desktop )
+	03. screen width less than 1200px  ( large Screen / Notebook )
+	04. screen width more than 767px  ( Tablets & Desktop Screen )
+	05. screen width less than 992px  ( Medium Screen / Tablets )
+	06. screen width less than 801px  ( Medium wide Screen / Small Tablets )
+	07. screen width less than 768px  ( Medium Screen / Smaller Tablets )
+	08. screen width less than 603px  ( Medium Screen / Mobile )
+	09. screen width less than 600px  ( Medium Screen / Mobile )
+	10. screen width less than 500px  ( Small Screen / Mobile )
+	11. screen width less than 370px  ( Smaller Screen / Mobile )
+
+====================================================== */
+
+@media (max-width: 1440px) {}
+
+/* -------------------------------------------------------------
+ screen width less than 1401px and more then 1040
+---------------------------------------------------------------- */
+
+@media (max-width: 1400px) and (min-width: 1040px) {}
+
+/* -------------------------------------------------------------
+ screen width more than 1200px and less then 1300
+---------------------------------------------------------------- */
+
+@media (min-width: 1200px) and (max-width: 1300px) {}
+
+/* -------------------------------------------------------------
+ screen width less than 1200px
+---------------------------------------------------------------- */
+
+@media (max-width: 1199px) {
+  /* --- general ---
+  ----------------------------- */
+  p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  p.load {
+    font-size: 16px !important;
+    line-height: 24px;
+    letter-spacing: 1px !important;
+    font-weight: 300;
+  }
+
+  /* --- margin 100 ---
+  ----------------------------- */
+  .mt-100 {
+    margin-top: 60px !important;
+  }
+  .mb-100 {
+    margin-bottom: 60px !important;
+  }
+  .mr-100 {
+    margin-right: 60px !important;
+  }
+  .ml-100 {
+    margin-left: 60px !important;
+  }
+  .mtb-100 {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+  }
+  .mrl-100 {
+    margin-right: 60px !important;
+    margin-left: 60px !important;
+  }
+  /* --- padding 100 ---
+  ----------------------------- */
+  .p-100 {
+    padding: 60px !important;
+  }
+  .pt-100 {
+    padding-top: 60px !important;
+  }
+  .pb-100 {
+    padding-bottom: 60px !important;
+  }
+  .pr-100 {
+    padding-right: 60px !important;
+  }
+  .pl-100 {
+    padding-left: 60px !important;
+  }
+  .ptb-100 {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+  .prl-100 {
+    padding-right: 60px !important;
+    padding-left: 60px !important;
+  }
+  /* --- other ---
+  ----------------------------- */
+  .ptb-100-70 {
+    padding-top: 60px !important;
+    padding-bottom: 30px !important;
+  }
+  .ptb-80-70 {
+    padding-top: 60px !important;
+    padding-bottom: 30px !important;
+  }
+  div.ptb-100 p:last-child {
+    margin: 0;
+  }
+  div.ptb-60 p:last-child {
+    margin: 0;
+  }
+  div.ptb-30 p:last-child {
+    margin: 0;
+  }
+  /* --- owl-carousel ---
+  ----------------------------- */
+  .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    left: 0%;
+  }
+  .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    right: 0%;
+  }
+  /* --- portfolio_filter ---
+----------------------------- */
+  #portfolio_filter {
+    margin-bottom: 60px;
+  }
+  #portfolio_filter ul li {
+    font-size: 14px;
+  }
+  #portfolio_items .grid-item-detail {
+    padding: 1.25rem 0;
+  }
+}
+
+/* -------------------------------------------------------------
+ screen width less than 992px
+---------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+  /* --- space-margin ---
+  ----------------------------- */
+  .p-60 {
+    padding: 30px !important;
+  }
+}
+
+/* -------------------------------------------------------------
+ screen width large than 991px
+---------------------------------------------------------------- */
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
+  }
+}
+
+/* -------------------------------------------------------------
+ screen width less than 992px
+---------------------------------------------------------------- */
+
+@media (max-width: 991px) {
+  /* --- icon-box-single ---
+  ----------------------------- */
+  .icon-box-single {
+    padding: 45px 28px;
+  }
+  /* --- space-special ---
+  ----------------------------- */
+  .pr-md-100 {
+    padding-right: 15px !important;
+  }
+}
+
+/* -------------------------------------------------------------
+ screen width less than 801px
+---------------------------------------------------------------- */
+
+@media (max-width: 800px) {
+  /* --- space-special ---
+  ----------------------------- */
+  .mt-md-60 {
+    margin-top: 60px;
+  }
+  .mt-md-30 {
+    margin-top: 30px;
+  }
+  .mb-md-30 {
+    margin-bottom: 30px;
+  }
+  .prl-md-30 {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
+  /* --- portfolio_filter ---
+  ----------------------------- */
+  #portfolio_filter ul li {
+    font-size: 13px;
+  }
+  /* --- team ---
+  ----------------------------- */
+  .team-name {
+    font-size: 18px;
+  }
+  .team-style-1,
+  .team-style-2,
+  .team-style-3{
+    margin-bottom: 30px;
+  }
+  /* --- divider ---
+  ----------------------------- */
+  .divider{
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  /* --- pills ---
+  ----------------------------- */
+  .nav-pills{
+    justify-content: center;
+  }
+  /* --- background ---
+  ----------------------------- */
+  .bg-img-0, .bg-img-1, .bg-img-2, .bg-img-3, .bg-img-4, .bg-img-5, .bg-img-6, .bg-img-7, .bg-img-8, .bg-img-9, .bg-img-10, .bg-img-11, .bg-img-12, .bg-img-13, .bg-img-14, .bg-img-15, .bg-img-16, .bg-img-17, .bg-img-18, .bg-img-19, .bg-img-20 {
+      background-attachment: inherit;
+  }
+
+}
+
+/* -------------------------------------------------------------
+ screen width less than 768px
+---------------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  /* --- space-special ---
+  ----------------------------- */
+  .mt-sm-30 {
+    margin-top: 30px!important;
+  }
+  .mt-sm-45 {
+    margin-top: 45px!important;
+  }
+  .mt-sm-60 {
+    margin-top: 60px!important;
+  }
+  .mt-sm-100 {
+    margin-top: 100px!important;
+  }
+
+}
+
+/* -------------------------------------------------------------
+ screen width less than 603px
+---------------------------------------------------------------- */
+
+@media (max-width: 603px) {}
+
+/* -------------------------------------------------------------
+ screen width less than 600px
+---------------------------------------------------------------- */
+
+@media (max-width: 600px) {}
+
+/* -------------------------------------------------------------
+ screen width less than 500px
+---------------------------------------------------------------- */
+
+@media (max-width: 500px) {
+  /* --- headign display ---
+  ----------------------------- */
+  .display-1{
+    font-size: 4rem;
+  }
+  /* --- section-title ---
+  ----------------------------- */
+  .header-sticky .fixed-top {
+    top: 0;
+  }
+  /* --- section-title ---
+  ----------------------------- */
+  .section-title h2, .section-title-1 h2, .section-title-2 h2, .section-title-3 h2, .section-title-4 h2 {
+    font-size: 24px;
+    padding: 10px 10px !important;
+  }
+  /* --- space-special-padding ---
+  ----------------------------- */
+  .p-sm-0 {
+    padding: 0 !important;
+  }
+  .pr-sm-0 {
+    padding-right: 0px !important;
+  }
+  .pl-sm-0 {
+    padding-left: 0px !important;
+  }
+  .prl-sm-0 {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .ptb-sm-0 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .p-sm-15 {
+    padding: 15px !important;
+  }
+  .pr-sm-15 {
+    padding-right: 15px !important;
+  }
+  .pl-sm-15 {
+    padding-left: 15px !important;
+  }
+  .prl-sm-15 {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  .ptb-sm-15 {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .p-sm-30 {
+    padding: 30px !important;
+  }
+  .pr-sm-30 {
+    padding-right: 30px !important;
+  }
+  .pl-sm-30 {
+    padding-left: 30px !important;
+  }
+  .prl-sm-30 {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
+  .ptb-sm-30 {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .p-sm-60 {
+    padding: 60px !important;
+  }
+  .pr-sm-60 {
+    padding-right: 60px !important;
+  }
+  .pl-sm-60 {
+    padding-left: 60px !important;
+  }
+  .prl-sm-60 {
+    padding-right: 60px !important;
+    padding-left: 60px !important;
+  }
+  .ptb-sm-60 {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  /* --- space-special-margin ---
+  ----------------------------- */
+  .m-sm-0 {
+    margin: 0 !important;
+  }
+  .mr-sm-0 {
+    margin-right: 0px !important;
+  }
+  .ml-sm-0 {
+    margin-left: 0px !important;
+  }
+  .mrl-sm-0 {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+  .mtb-sm-0 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .m-sm-15 {
+    margin: 15px !important;
+  }
+  .mr-sm-15 {
+    margin-right: 15px !important;
+  }
+  .ml-sm-15 {
+    margin-left: 15px !important;
+  }
+  .mrl-sm-15 {
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+  }
+  .mtb-sm-15 {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .m-sm-30 {
+    margin: 30px !important;
+  }
+  .mr-sm-30 {
+    margin-right: 30px !important;
+  }
+  .ml-sm-30 {
+    margin-left: 30px !important;
+  }
+  .mt-sm-30 {
+    margin-top: 30px !important;
+  }
+  .mb-sm-30 {
+    margin-bottom: 30px !important;
+  }
+  .mrl-sm-30 {
+    margin-right: 30px !important;
+    margin-left: 30px !important;
+  }
+  .mtb-sm-30 {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .m-sm-60 {
+    margin: 60px !important;
+  }
+  .mr-sm-60 {
+    margin-right: 60px !important;
+  }
+  .mt-sm-60 {
+    margin-top: 60px !important;
+  }
+  .mb-sm-60 {
+    margin-bottom: 60px !important;
+  }
+  .ml-sm-60 {
+    margin-left: 60px !important;
+  }
+  .mrl-sm-60 {
+    margin-right: 60px !important;
+    margin-left: 60px !important;
+  }
+  .mtb-sm-60 {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+  }
+
+  /* --- progress bar ---
+  ----------------------------- */
+.progress-bar-inline-2 .progress-value{
+  text-align: left;
+}
+
+  /* --- section-footer ---
+  ----------------------------- */
+  footer .r-border {
+    border-right: none !important;
+  }
+  /* --- blogs ---
+  ----------------------------- */
+  .blog-post {
+    border: 1px solid rgba(111, 111, 111, 0.33);
+    padding: 15px;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+/* -------------------------------------------------------------
+ screen width less than 370px
+---------------------------------------------------------------- */
+
+@media (max-width: 370px) {}
