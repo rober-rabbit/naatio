@@ -90,7 +90,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item dropdown">
-              <a class="nav-link " href="#servicos" >Servicios</a>
+              <a class="nav-link " href="#servicios" >Servicios</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link " href="#acerca" >Acerca de</a>
@@ -99,7 +99,7 @@
               <a class="nav-link " href="#experiencia" >Experiencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -260,7 +260,7 @@
     <!-- end revolution slider section-->
 
     <!-- start SERVICIOS slider section-->
-    <section class="section-main bg-img-13">
+    <section id="servicios" class="section-main bg-img-13">
       <div class="overlay overlay-light-92">
         <div class="container ptb-100-70">
           <div class="row justify-content-center">
@@ -270,7 +270,7 @@
                 <!-- start services -->
                 <div class="service-style-1 bg-five">
                   <h6>Sitios</h6>
-                  <h2>web/ecommerce</h2>
+                  <h2>web/</br> ecommerce</h2>
                   <hr class="center color">
                   <p>Impulsa a tu empresa a través de internet presentando el potencial y las capacidades de tus servicios o productos en un sitio web visible desde cualquier dispositivo. Haz que el mundo te encuentre y descubre una herramienta que te ayudará a alcanzar tus metas profesionales y/o empresariales.</p>
                   <a class="color-primary" href="javascript:void()">Quiero saber como. <i class="icon ion-arrow-right-c"></i></a>
@@ -286,7 +286,7 @@
                   <h2>Apps móviles</h2>
                   <hr class="center color">
                   <p>Diseñamos y desarrollamos la aplicación móvil que requieres para tu proyecto empresarial. Una nueva forma de llevar tus servicios y/o productos a tus consumidores. Desarrolla el potencial de tu empresa.</p>
-                  <a class="color-primary" href="javascript:void()">Tengo una grid-item-detail<i class="icon ion-arrow-right-c"></i></a>
+                  <a class="color-primary" href="javascript:void()">Tengo una idea<i class="icon ion-arrow-right-c"></i></a>
                 </div>
                 <!-- end services -->
               </div>
@@ -331,8 +331,8 @@
     </section>
     <!-- end call to action -->
 
-    <!-- start ABOUT content -->
-    <section class="section-main  ptb-100">
+    <!-- start ACERCA DE content -->
+    <section id="acerca" class="section-main  ptb-100">
       <div class="container prl-sm-30">
         <div class="row justify-content-between align-items-center">
           <!-- start content  -->
@@ -463,7 +463,7 @@
     <!-- end CLIENTES five section-->
 
     <!-- start portfolio content -->
-    <section id="portfolio" class="section-space ptb-100-70">
+    <section id="experiencia" class="section-space ptb-100-70">
       <div class="container-fluid text-center">
         <!-- start filter -->
         <div class="row justify-content-md-center m-b-60">
@@ -690,7 +690,7 @@
     <!-- end 1 section-->
     
     <!-- start CONTACTO content -->
-    <section class="section-main ptb-100">
+    <section id="contacto" class="section-main ptb-100">
       <div class="container">
         <!-- start row -->
         <div class="row justify-content-center">
@@ -798,6 +798,21 @@
   <!-- footer script start  -->
   <script>
     window.jQuery || document.write('<script type="text/javascript" src="assets/js/vendor/jquery.min.js"><\/script>')
+  </script>
+
+  <script>
+  /*
+   * ----------------------------------------------------------------------------------------
+   *  SLOW SCROOL ROBERUFU
+   * ----------------------------------------------------------------------------------------
+   */
+   $('nav ul li a').click(function(e){				
+		e.preventDefault();		//evitar el eventos del enlace normal
+		var strAncla=$(this).attr('href'); //id del ancla
+			$('body,html').stop(true,true).animate({				
+				scrollTop: $(strAncla).offset().top
+			},1000);
+  });
   </script>
 
   <script type="text/javascript" src="assets/libs/bootstrap/js/tether.min.js"></script>

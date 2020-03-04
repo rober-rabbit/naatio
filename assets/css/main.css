@@ -40,7 +40,7 @@
    02. Navbar Styles
 ======================================================= */
 .main-header {
-  background: #1C2025;
+  background:#ffffff;
   position: fixed;
   top: 0;
   right: 0;
@@ -61,11 +61,16 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 8px 16px 7px;
-  color: #ffffff;
+  color: #1C2025;
   font-weight: 400; }
+  
 
 .dark .navbar-nav .nav-link {
   color: #1C2025; }
+
+.dark .navbar-nav .nav-link .isActive {
+  background-color: red;
+}
 
 .dark .navbar-brand .lite {
   display: none; }
@@ -86,7 +91,7 @@
 /* --- header sticky ---
 ---------------------------*/
 .sticky-top {
-  background: #1C2025;
+  background: #ffffff;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
@@ -153,7 +158,7 @@
   border: 1px solid #494949; }
 
 .navbar-toggler-icon {
-  color: #ffffff;
+  color: #494949;
   font-size: 24px;
   width: 24px;
   height: 24px; }
