@@ -4,22 +4,25 @@
 
 // Replace this with your own email address
 
-$siteOwnersEmail = 'coderpixel@gmail.com';
+$siteOwnersEmail = 'mayorga_50@hotmail.com';
 
 
 
 if($_POST) {
 
 
+	//capturamos los  input
+	$name = trim(stripslashes($_POST['name']));
 
-	$name = trim(stripslashes($_POST['contactName']));
+	$email = trim(stripslashes($_POST['email']));
+	
+	$whatsapp = trim(stripslashes($_POST['whatsapp']));
 
-	$email = trim(stripslashes($_POST['contactEmail']));
+	$enterprise = trim(stripslashes($_POST['enterprise']));
 
-	$subject = trim(stripslashes($_POST['contactSubject']));
+	$contact_message = trim(stripslashes($_POST['message']));
 
-	$contact_message = trim(stripslashes($_POST['contactMessage']));
-
+	//array de errores
 	$error = array();
 
 
@@ -28,7 +31,7 @@ if($_POST) {
 
 	if (strlen($name) < 2) {
 
-		$error['name'] = "Please enter your name.";
+		$error['name'] = "Por favor ingrese su nombre completo.";
 
 	}
 
@@ -36,7 +39,7 @@ if($_POST) {
 
 	if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
 
-		$error['email'] = "Please enter a valid email address.";
+		$error['email'] = "Por favor ingrese un correo valido.";
 
 	}
 
@@ -44,15 +47,15 @@ if($_POST) {
 
 	if (strlen($contact_message) < 15) {
 
-		$error['message'] = "Your message should have at least 15 characters.";
+		$error['message'] = "Describa un poco más su mensaje.";
 
 	}
 
-	// Subject
+	// enterprise
 
-	if ($subject == '') {
+	if ($enterprise == '') {
 
-		$subject = "Contact Form Submission";
+		$enterprise = "Anonimo";
 
 	}
 
@@ -62,15 +65,17 @@ if($_POST) {
 
 	// Set Message
 
-	$message = "Email from: " . $name . "\r\n";
+	$message = "Correo de: " . $name . "\r\n";
 
-	$message .= "Email address: " . $email . "\r\n";
+	$message .= "Correo electronico: " . $email . "\r\n";
 
-	$message .= "Message: \r\n";
+	$message .= "Whatsapp: " . $whatsapp . "\r\n";
+
+	$message .= "Mensaje: \r\n";
 
 	$message .= $contact_message;
 
-	$message .= "\r\n ----- \r\n This email was sent from your site's contact form. \r\n";
+	$message .= "\r\n ----- \r\n Este correo ha sido enviado desde naatio.com. \r\n";
 
 
 
@@ -100,7 +105,7 @@ if($_POST) {
 
 		ini_set("sendmail_from", $siteOwnersEmail); // for windows server
 
-		$mail = mail($siteOwnersEmail, $subject, $message, $headers);
+		$mail = mail($siteOwnersEmail, "Mensaje de contacto", $message, $headers);
 
 
 
@@ -112,7 +117,7 @@ if($_POST) {
 
 		} else {
 
-			$error['sending'] = "Something went wrong. Please try again.";
+			$error['sending'] = "Algo salio mal, intenta de nuevo.";
 
 			echo json_encode($error);
 
