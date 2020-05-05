@@ -4,7 +4,7 @@
 
 // Replace this with your own email address
 
-$siteOwnersEmail = 'mayorga_50@hotmail.com';
+$siteOwnersEmail = 'hola@naatio.com';
 
 
 
@@ -112,7 +112,6 @@ if($_POST) {
 		if ($mail) {
 
 			$error['OK'] = "done";
-
 			echo json_encode($error);
 
 		} else {
@@ -130,16 +129,11 @@ if($_POST) {
 
 
 	else {
-
-
-
 		echo json_encode($error);
 
-
-
 	} # end else - there was a validation error
-
-
+	
+	header("Location:https://naatio.com");
 
 }
 

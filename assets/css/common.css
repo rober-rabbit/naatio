@@ -661,10 +661,10 @@ blockquote-border {
   background-image: url("http://placehold.it/1920x1080"); }
 
 .bg-img-10 {
-  background-image: url("http://placehold.it/1920x1080"); }
+  background-image: url("/img/general/CTA.jpg"); }
 
 .bg-img-11 {
-  background-image: url("http://placehold.it/1920x1080"); }
+  background-image: image("http://placehold.it/1920x1080"); }
 
 .bg-img-12 {
   background-image: url("http://placehold.it/1920x1080"); }
@@ -1243,7 +1243,7 @@ a.white:hover {
 /* --- color ---
 ----------------------------- */
 .color-primary {
-  color: #693792 !important; }
+  color: #00458a !important; }
 
 .color-secondary {
   color: #1C2025 !important; }
