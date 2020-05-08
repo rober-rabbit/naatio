@@ -630,6 +630,7 @@ blockquote-border {
 
 /* --- image background ---
 ----------------------------- */
+/*
 .bg-img-0 {
   background-image: url("http://placehold.it/1920x1080"); }
 
@@ -658,14 +659,14 @@ blockquote-border {
   background-image: url("http://placehold.it/1920x1080"); }
 
 .bg-img-9 {
-  background-image: url("http://placehold.it/1920x1080"); }
+  background-image: url("http://placehold.it/1920x1080"); }*/
 
 .bg-img-10 {
   background-image: url("/img/general/CTA.jpg"); }
 
 .bg-img-11 {
   background-image: image("/img/general/CTA.jpg"); }
-
+/*
 .bg-img-12 {
   background-image: url("http://placehold.it/1920x1080"); }
 
@@ -692,7 +693,7 @@ blockquote-border {
 
 .bg-img-20 {
   background-image: url("http://placehold.it/1920x1080"); }
-
+*/
 /* ====================================================
    07. Space margin and padding
 =======================================================*/
